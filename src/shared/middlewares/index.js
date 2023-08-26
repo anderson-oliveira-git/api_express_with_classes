@@ -8,12 +8,12 @@ class Middlewares {
 
     if (book) {
       return next();
-    } else {
-      return res.json({
-        id: id,
-        status: 'Livro não encontrado! 👻'
-      });
-    }
+    } 
+    
+    return res.json({
+      id: id,
+      status: 'Livro não encontrado! 👻'
+    });
   }
 }
 
